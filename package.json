@@ -1,19 +1,21 @@
 {
-  "name": "hash-generator",
-  "version": "0.0.0-development",
-  "description": "A randomly consistent (a-la-Stripe) hash generator ",
+  "name": "consistent-ids",
+  "version": "0.1.0",
+  "description": "A randomly consistent (a-la-Stripe) hash generator",
   "license": "MIT",
   "author": {
     "name": "Clément SAUVAGE",
     "email": "hello@clementsauvage.me",
-    "url": "https://clementsauvage.dev"
+    "url": "https://clementsauvage.me"
   },
-  "repository": "https://github.com/csauvage/hash-generator",
+  "repository": "https://github.com/csauvage/consistent-ids-generator",
   "engines": {
     "node": ">=4"
   },
   "scripts": {
     "start": "nps --no-scripts",
+    "build": "./node_modules/.bin/babel src -d dist --ignore src/*.spec.js,src/*.test.js",
+    "prepublish": "yarn build",
     "precommit": "remove-lockfiles && lint-staged",
     "test": "nps test"
   },
@@ -64,6 +66,10 @@
     ]
   },
   "keywords": [
-    "🐰"
+    "stripe",
+    "hash",
+    "random",
+    "api",
+    "database"
   ]
 }

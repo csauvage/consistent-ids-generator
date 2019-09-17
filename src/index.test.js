@@ -1,8 +1,9 @@
-import hashGenerator from './index';
+import IdGenerator from './index';
 
-describe('index.js', () => {
-  it('should say something', () => {
-    expect(hashGenerator('🐰')).toEqual('👉 🐰 👈');
-    expect(hashGenerator()).toEqual('No args passed!');
+describe('Index.js', () => {
+  it('Should generate a hash', () => {
+    const generator = new IdGenerator('Random_Secret');
+    const randomHash = generator.generate('cus');
+    expect(randomHash.length).toEqual(24 + 4);
   });
 });

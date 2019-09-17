@@ -1,10 +1,10 @@
-# Project Roadmap
+# Project Roadmap 🚧 🏗
 
-This is where we‘ll define a few things about the library‘s goals.
-
-We haven‘t filled this out yet though. Care to help? See [`contributing.md`](../contributing.md)
+Care to help? See [`contributing.md`](../contributing.md)
 
 ## Want to do
+
+- Add some tests
 
 ## Might do
 

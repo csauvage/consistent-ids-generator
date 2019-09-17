@@ -1,6 +1,6 @@
 # hash-generator
 
-> A randomly consistent (a-la-Stripe) hash generator 
+> A no dependency randomly consistent (a-la-Stripe) hash generator 
 
 [![npm](https://img.shields.io/npm/v/hash-generator.svg?style=flat-square)](https://www.npmjs.com/package/hash-generator)
 [![npm](https://img.shields.io/npm/dt/hash-generator.svg?style=flat-square)](https://npm-stat.com/charts.html?package=hash-generator&from=2016-04-01)
@@ -19,16 +19,36 @@
 ## Installation
 
 ```sh 
-npm install --save hash-generator
+npm install consistent-ids --save 
+```
+Or use yarn (I ❤️ yarn)
+
+```sh 
+yarn add consistent-ids
 ```
 
 ## Usage
 
-```js
-import hashGenerator from 'hash-generator';
 
-hashGenerator('🐰');
-//=> '👉 🐰 👈'
+```dotenv
+
+#In Your .env file
+HASH_KEY = SomeTrulyRandomKeyWhichCannotBeGuessedByAnyone
+
+```
+
+```js
+import HashGenerator from 'consistent-ids';
+
+const generator = new IdGenerator(); // We'll take care of HASH_KEY for you
+generator.generate('ord');
+
+// => ord_1BVVs21TuBY1vZhGhN03ug5
+      
+generator.generate('cus');
+
+// => cus_1BVVs21TuBY1vZhGhN0sKqd
+
 ```
 
 ## FAQ
@@ -41,15 +61,14 @@ hashGenerator('🐰');
 
 ## Contributors
 
-Thanks goes to these people ([emoji key](https://github.com/kentcdodds/all-contributors#emoji-key)):
+Thanks goes to these people ✨
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="https://avatars2.githubusercontent.com/u/22868432?v=3" width="100px;"/><br /><sub>Clément SAUVAGE</sub>](https://github.com/csauvage)<br />[💻](https://github.com/csauvage/hash-generator/commits?author=csauvage "Code") [📖](https://github.com/csauvage/hash-generator/commits?author=csauvage "Documentation") [🚇](#infra-luftywiranda13 "Infrastructure (Hosting, Build-Tools, etc)") |
+| [<img src="http://cdn.clementsauvage.me/profile/2019/round_black.jpg" width="100px;"/><br /><sub>Clément SAUVAGE</sub>](https://github.com/csauvage)<br />[💻](https://github.com/csauvage/hash-generator/commits?author=csauvage "Code") [📖](https://github.com/csauvage/hash-generator/commits?author=csauvage "Documentation") 
 | :---: |
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/kentcdodds/all-contributors) specification. Contributions of any kind welcome!
 
 ## License
 
-MIT &copy; [Clément SAUVAGE](https://clementsauvage.dev)
+MIT &copy; [Clément SAUVAGE](https://clementsauvage.me)
