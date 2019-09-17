@@ -2,10 +2,10 @@
 
 > A no dependency randomly consistent (a-la-Stripe) hash generator 
 
-[![npm](https://img.shields.io/npm/v/hash-generator.svg?style=flat-square)](https://www.npmjs.com/package/hash-generator)
-[![npm](https://img.shields.io/npm/dt/hash-generator.svg?style=flat-square)](https://npm-stat.com/charts.html?package=hash-generator&from=2016-04-01)
-[![Travis branch](https://img.shields.io/travis/csauvage/hash-generator/master.svg?style=flat-square)](https://travis-ci.org/csauvage/hash-generator)
-[![Codecov branch](https://img.shields.io/codecov/c/github/csauvage/hash-generator/master.svg?style=flat-square)](https://codecov.io/github/csauvage/hash-generator)
+[![npm](https://img.shields.io/npm/v/consistent-ids.svg?style=flat-square)](https://www.npmjs.com/package/hash-generator)
+[![npm](https://img.shields.io/npm/dt/consistent-ids.svg?style=flat-square)](https://npm-stat.com/charts.html?package=hash-generator&from=2016-04-01)
+[![Travis branch](https://img.shields.io/travis/csauvage/consistent-ids-generator/master.svg?style=flat-square)](https://travis-ci.org/csauvage/hash-generator)
+[![Codecov branch](https://img.shields.io/codecov/c/github/csauvage/consistent-ids-generator/master.svg?style=flat-square)](https://codecov.io/github/csauvage/hash-generator)
 <br />
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square)](http://commitizen.github.io/cz-cli/)
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
@@ -53,11 +53,8 @@ generator.generate('cus');
 
 ## FAQ
 
-// TODO
+Whhat
 
-## Related
-
-// TODO
 
 ## Contributors
 
