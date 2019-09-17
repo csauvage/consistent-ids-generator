@@ -61,13 +61,11 @@ generator.generate('cus');
 
 ## Contributors
 
-Thanks goes to these people ✨
+### Maintainer
 
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-| [<img src="http://cdn.clementsauvage.me/profile/2019/round_black.jpg" width="100px;"/><br /><sub>Clément SAUVAGE</sub>](https://github.com/csauvage)<br />[💻](https://github.com/csauvage/hash-generator/commits?author=csauvage "Code") [📖](https://github.com/csauvage/hash-generator/commits?author=csauvage "Documentation") 
-| :---: |
-<!-- ALL-CONTRIBUTORS-LIST:END -->
+<img src="http://cdn.clementsauvage.me/profile/2019/round_black.jpg" width="100px;"/><br /><sub>Clément SAUVAGE</sub>
 
+### Contributors
 
 ## License
 
