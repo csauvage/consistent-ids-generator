@@ -1,0 +1,22 @@
+{
+  "projectName": "hash-generator",
+  "projectOwner": "csauvage",
+  "files": [
+    "readme.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "csauvage",
+      "name": "Clément SAUVAGE",
+      "avatar_url": "https://avatars2.githubusercontent.com/u/22868432?v=3",
+      "profile": "https://github.com/csauvage",
+      "contributions": [
+        "code",
+        "doc",
+        "infra"
+      ]
+    }
+  ]
+}
