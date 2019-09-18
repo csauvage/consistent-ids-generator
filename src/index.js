@@ -28,6 +28,14 @@ export default class IdGenerator {
       .toString()
       .concat(date.getMilliseconds());
   }
+  // Helper
+  static uuidv4() {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, c => {
+      const r = (Math.random() * 16) | 0;
+      const v = c === 'x' ? r : (r & 0x3) | 0x8;
+      return v.toString(16);
+    });
+  }
 
   static hashAndCut(message, secret, len = 3): string {
     const hash = crypto
@@ -38,11 +46,9 @@ export default class IdGenerator {
   }
 
   getUniqKey(length) {
-    console.log(length);
-    const moduloLen = length % 7;
+    const moduloLen = length % 8;
 
-    const partLenght = (length - moduloLen) / 7;
-    console.log(partLenght, moduloLen);
+    const partLenght = (length - moduloLen) / 8;
 
     /* Padding characters */
     let paddingChars = 0;
@@ -73,6 +79,11 @@ export default class IdGenerator {
       this.secret,
       partLenght
     );
+    const uuidPart = IdGenerator.hashAndCut(
+      IdGenerator.uuidv4(),
+      this.secret,
+      partLenght
+    );
     const hourPart = IdGenerator.hashAndCut(
       date.getHours().toString(),
       this.secret,
@@ -97,6 +108,7 @@ export default class IdGenerator {
     return yearPart.concat(
       monthPart,
       dayPart,
+      uuidPart,
       hourPart,
       minutePart,
       secondsPart,
