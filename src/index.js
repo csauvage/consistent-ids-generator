@@ -4,7 +4,7 @@ const crypto = require('crypto');
 
 export default class IdGenerator {
   constructor(secret: string | null) {
-    if (!secret && process.env.HASH_KEY) {
+    if (!secret && !process.env.HASH_KEY) {
       throw new Error('You must provide a secret or a hash key');
     } else if (secret) {
       this.secret = secret;
