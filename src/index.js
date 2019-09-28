@@ -124,3 +124,7 @@ export default class IdGenerator {
     }
   }
 }
+
+const defaultGenerator = new IdGenerator();
+
+export { defaultGenerator };
