@@ -50,17 +50,7 @@ generator.generate('cus');
 // => cus_1BVVs21TuBY1vZhGhN0sKqd
 
 ```
-*Added in 0.3* <br/>
-**Feelin' lazy ? Use the default generator**
 
-```js
-// Make sure you have an HASH_KEY in your env variables 
-import {defaultGenerator} from 'consistent-ids';
-
-defaultGenerator.generate('pay');
-
-
-```
 
 
 
