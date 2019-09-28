@@ -38,7 +38,7 @@ HASH_KEY = SomeTrulyRandomKeyWhichCannotBeGuessedByAnyone
 ```
 
 ```js
-import HashGenerator from 'consistent-ids';
+import IdGenerator from 'consistent-ids';
 
 const generator = new IdGenerator(); // We'll take care of HASH_KEY for you
 generator.generate('ord');
@@ -50,10 +50,24 @@ generator.generate('cus');
 // => cus_1BVVs21TuBY1vZhGhN0sKqd
 
 ```
+*Added in 0.3* <br/>
+**Feelin' lazy ? Use the default generator**
+
+```js
+// Make sure you have an HASH_KEY in your env variables 
+import {defaultGenerator} from 'consistent-ids';
+
+defaultGenerator.generate('pay');
+
+
+```
+
+
 
 ## FAQ
 
-Whhat
+What for ? 
+*To be written*
 
 
 ## Contributors
