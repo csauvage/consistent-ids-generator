@@ -125,6 +125,6 @@ export default class IdGenerator {
   }
 }
 
-const defaultGenerator = new IdGenerator();
+const defaultGenerator = new IdGenerator(process.env.HASH_KEY);
 
 export { defaultGenerator };
