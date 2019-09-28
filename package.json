@@ -1,6 +1,6 @@
 {
   "name": "consistent-ids",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "A randomly consistent (a-la-Stripe) hash generator",
   "license": "MIT",
   "author": {
